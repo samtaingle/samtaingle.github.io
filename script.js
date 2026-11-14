@@ -284,9 +284,9 @@ function initScrollSpy() {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove('text-brand-600', 'dark:text-brand-400', 'font-bold');
+      link.classList.remove('active-nav');
       if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('text-brand-600', 'dark:text-brand-400', 'font-bold');
+        link.classList.add('active-nav');
       }
     });
   });
