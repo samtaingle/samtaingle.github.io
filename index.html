@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samta Ingle | Frontend Developer (Angular Specialist)</title>
+  <meta name="description" content="Portfolio of Samta Ingle, a Frontend Developer with 3.3+ years of experience specializing in Angular (v8-v16), TypeScript, RxJS, REST APIs, and scalable web applications." />
+  <meta name="keywords" content="Samta Ingle, Frontend Developer, Angular Developer, TypeScript, RxJS, Webicsoft, Pune, India, Web Developer Portfolio" />
+  <meta name="author" content="Samta Ingle" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Samta Ingle | Frontend Developer (Angular)" />
+  <meta property="og:description" content="Frontend Developer specializing in Angular (v8-v16), TypeScript, RxJS, and enterprise web solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samtaingle.github.io/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-surface-light dark:bg-surface-dark text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white transition-colors duration-300">
+
+  <!-- Background Decorative Ambient Glows -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200/60 dark:border-slate-800/60" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-rose-500 to-amber-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform duration-300">
+          SI
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
+            Samta Ingle
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse" title="Available for opportunities"></span>
+          </span>
+          <span class="text-xs text-brand-600 dark:text-brand-400 font-mono font-medium block">Frontend &bull; Angular Dev</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Utilities -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800/60 text-slate-600 dark:text-slate-300 transition-all duration-200" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+          <i class="fa-solid fa-sun hidden dark:inline-block text-lg text-amber-400"></i>
+        </button>
+
+        <!-- Resume Action Button -->
+        <a href="Samta_Ingle_Resume.pdf" download="Samta_Ingle_Resume.pdf" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-semibold border border-slate-300 dark:border-slate-700 hover:border-brand-500 text-slate-700 dark:text-slate-200 hover:text-brand-600 transition-all duration-200">
+          <i class="fa-solid fa-file-arrow-down text-xs text-brand-500"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Contact Action Button -->
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-brand-600 to-rose-600 hover:from-brand-500 hover:to-rose-500 text-white shadow-md shadow-brand-500/20 hover:shadow-brand-500/35 transition-all duration-200 hover:-translate-y-0.5">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+          <span>Get in Touch</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white/95 dark:bg-slate-950/95 border-b border-slate-200 dark:border-slate-800 backdrop-blur-xl">
+      <div class="flex flex-col gap-2">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex gap-3">
+          <a href="#contact" class="w-full text-center py-2.5 rounded-xl text-sm font-semibold bg-brand-600 text-white">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-20">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="min-h-[calc(100vh-5rem)] flex items-center justify-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Column -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Status Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 dark:bg-brand-500/15 text-brand-700 dark:text-brand-300 text-xs sm:text-sm font-medium mb-6 animate-fade-in">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <span class="w-2 h-2 -ml-3 rounded-full bg-emerald-500"></span>
+            <span>Frontend Developer &bull; Angular Specialist</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15] mb-6">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-rose-500 to-amber-500">Samta Ingle</span>.
+            <br />
+            <span class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-700 dark:text-slate-300">
+              Crafting Scalable Enterprise UIs & Real-Time Web Apps.
+            </span>
+          </h1>
+
+          <!-- Bio Pitch -->
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            With <strong class="text-slate-900 dark:text-white font-semibold">3.3+ years of experience</strong> specializing in 
+            <span class="text-brand-600 dark:text-brand-400 font-semibold">Angular (v8–v16)</span>, TypeScript, RxJS, and REST microservices. 
+            Delivered 20+ reusable enterprise components, WebSocket real-time systems, and achieved 80%+ unit test coverage with ~35% fewer production bugs.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
+            <a href="#projects" class="px-6 py-3.5 rounded-xl text-base font-semibold bg-gradient-to-r from-brand-600 to-rose-600 hover:from-brand-500 hover:to-rose-500 text-white shadow-lg shadow-brand-600/30 hover:shadow-brand-600/45 transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2">
+              <i class="fa-solid fa-code"></i>
+              <span>View Projects</span>
+            </a>
+
+            <a href="Samta_Ingle_Resume.pdf" download="Samta_Ingle_Resume.pdf" class="px-6 py-3.5 rounded-xl text-base font-semibold bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white border border-slate-700 shadow-md transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2">
+              <i class="fa-solid fa-file-arrow-down text-brand-400"></i>
+              <span>Download CV</span>
+            </a>
+            
+            <a href="#contact" class="px-6 py-3.5 rounded-xl text-base font-semibold border border-slate-300 dark:border-slate-700 hover:border-brand-500 dark:hover:border-brand-400 bg-white/60 dark:bg-slate-900/60 backdrop-blur-sm text-slate-800 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+
+            <button id="quick-copy-email-hero" class="px-4 py-3.5 rounded-xl text-sm font-mono border border-dashed border-slate-300 dark:border-slate-700 hover:border-brand-500 text-slate-600 dark:text-slate-400 hover:text-brand-600 transition flex items-center gap-2" title="Click to copy email">
+              <i class="fa-regular fa-clone"></i>
+              <span id="copy-email-text">samtaingle555@gmail.com</span>
+            </button>
+          </div>
+
+          <!-- Social Links & Location -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-slate-600 dark:text-slate-400">
+            <a href="https://github.com/samtaingle" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition flex items-center gap-2 font-medium">
+              <i class="fa-brands fa-github text-lg"></i>
+              <span>github.com/samtaingle</span>
+            </a>
+            <a href="https://linkedin.com/in/samta-ingle" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition flex items-center gap-2 font-medium">
+              <i class="fa-brands fa-linkedin text-lg text-sky-600"></i>
+              <span>linkedin.com/in/samta-ingle</span>
+            </a>
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-rose-500"></i>
+              <span>Pune, Maharashtra, India</span>
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Column: Interactive Code Card & Developer Profile -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden text-left relative transform hover:scale-[1.01] transition-transform duration-300">
+            
+            <!-- Window Titlebar -->
+            <div class="px-4 py-3 bg-slate-950/80 border-b border-slate-800/80 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                <span class="ml-2 font-mono text-xs text-slate-400">frontend-engineer.component.ts</span>
+              </div>
+              <span class="text-[10px] font-mono uppercase tracking-wider text-brand-400 bg-brand-950/80 border border-brand-800 px-2 py-0.5 rounded">Angular 16</span>
+            </div>
+
+            <!-- Code Body -->
+            <div class="p-5 font-mono text-xs leading-relaxed text-slate-300 overflow-x-auto space-y-1">
+              <p><span class="text-rose-400">@Component</span>({</p>
+              <p class="pl-4">selector: <span class="text-emerald-300">'app-developer'</span>,</p>
+              <p class="pl-4">standalone: <span class="text-amber-400">true</span>,</p>
+              <p class="pl-4">template: <span class="text-emerald-300">'&lt;enterprise-excellence /&gt;'</span></p>
+              <p>})</p>
+              <p><span class="text-rose-400">export class</span> <span class="text-sky-300">SamtaIngleComponent</span> {</p>
+              <p class="pl-4"><span class="text-sky-400">readonly</span> role = <span class="text-emerald-300">'Frontend Developer'</span>;</p>
+              <p class="pl-4"><span class="text-sky-400">readonly</span> experience = <span class="text-amber-300">'3.3+ Years'</span>;</p>
+              <p class="pl-4"><span class="text-sky-400">readonly</span> coreStack = [</p>
+              <p class="pl-8 text-emerald-300">'Angular v8–v16', 'TypeScript', 'RxJS',</p>
+              <p class="pl-8 text-emerald-300">'REST APIs', 'WebSocket', 'SCSS'</p>
+              <p class="pl-4">];</p>
+              <p class="pl-4"><span class="text-sky-400">readonly</span> metrics = {</p>
+              <p class="pl-8">componentsBuilt: <span class="text-amber-400">20</span>+,</p>
+              <p class="pl-8">apiIntegrations: <span class="text-amber-400">15</span>+,</p>
+              <p class="pl-8">unitTestCoverage: <span class="text-emerald-400">'80%+'</span>,</p>
+              <p class="pl-8">qaBugReduction: <span class="text-emerald-400">'~35%'</span></p>
+              <p class="pl-4">};</p>
+              <p class="pl-4"><span class="text-purple-400">buildDeliverable</span>(): <span class="text-sky-400">Observable</span>&lt;<span class="text-amber-300">EnterpriseApp</span>&gt; {</p>
+              <p class="pl-8"><span class="text-rose-400">return</span> <span class="text-sky-400">this</span>.streamlineWorkflows();</p>
+              <p class="pl-4">}</p>
+              <p>}</p>
+            </div>
+
+            <!-- Card Bottom Highlights -->
+            <div class="px-5 py-3 bg-slate-950/60 border-t border-slate-800 text-[11px] flex justify-between items-center text-slate-400">
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-bolt text-amber-400"></i> High Performance SPA</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> Jasmine Tested</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== IMPACT METRICS BAR ==================== -->
+    <section class="py-12 border-y border-slate-200/80 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/40 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+          
+          <div class="metric-card">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-rose-500">
+              3.3+
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">Years Production Experience</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-500">
+              20+
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">Reusable Components Built</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-emerald-500">
+              80%+
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">Unit Test Coverage (Karma/Jasmine)</p>
+          </div>
+
+          <div class="metric-card">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">
+              ~35%
+            </div>
+            <p class="text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">Fewer QA-Reported Bugs</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Specialized in Enterprise Angular & Modern Web</h2>
+          <p class="section-subtitle">Bridging design specifications, complex business logic, and resilient frontend architectures.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Detailed Biography -->
+          <div class="lg:col-span-7 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+            <p>
+              I am a results-driven <strong class="text-slate-900 dark:text-white">Frontend Developer</strong> currently working at 
+              <strong class="text-slate-900 dark:text-white">Webicsoft India Pvt. Ltd.</strong> in Pune. Over the past 3.3+ years, I have architected and maintained large-scale enterprise web applications across business process management (BPM), real-time messaging, and learning management domains.
+            </p>
+            <p>
+              My sweet spot is turning intricate wireframes and HLD/LLD technical specifications into production-ready, performant interfaces using 
+              <span class="text-brand-600 dark:text-brand-400 font-semibold">Angular (v8 through v16)</span>, TypeScript, and modern SCSS. I have deep hands-on expertise in 
+              <strong class="text-slate-800 dark:text-slate-200">Reactive Forms, custom RxJS observables, dynamic data tables, and state management</strong>.
+            </p>
+            <p>
+              Beyond core Angular, I continuously explore cutting-edge engineering paradigms: from integrating Angular with 
+              <strong class="text-slate-800 dark:text-slate-200">Adobe Experience Manager (AEM)</strong> via HTL & Maven packages, to crafting offline-first desktop POS software with 
+              <strong class="text-slate-800 dark:text-slate-200">Electron, React 18, and WebAssembly SQLite</strong>, to leveraging AI-assisted workflows for rapid prototyping and unit test drafting.
+            </p>
+
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                <div class="flex items-center gap-3 mb-2 font-semibold text-slate-900 dark:text-white">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center">
+                    <i class="fa-solid fa-layer-group"></i>
+                  </div>
+                  <span>Modular Architecture</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                  Lazy loading, route guards, standalone components & HTTP interceptors for maintainable codebases.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                <div class="flex items-center gap-3 mb-2 font-semibold text-slate-900 dark:text-white">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center">
+                    <i class="fa-solid fa-flask"></i>
+                  </div>
+                  <span>Test-Driven Quality</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                  Rigorous unit testing with Jasmine/Karma achieving 80%+ coverage to minimize regression bugs.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Fact Sheet / Contact Card -->
+          <div class="lg:col-span-5">
+            <div class="p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 shadow-xl relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-brand-500/10 rounded-full blur-2xl"></div>
+
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-address-card text-brand-500"></i>
+                Candidate Profile
+              </h3>
+
+              <div class="space-y-4 text-sm">
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Current Role</span>
+                  <span class="font-semibold text-slate-800 dark:text-slate-200">Frontend Developer</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Company</span>
+                  <span class="font-semibold text-slate-800 dark:text-slate-200">Webicsoft India Pvt. Ltd.</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Total Experience</span>
+                  <span class="font-semibold text-brand-600 dark:text-brand-400">3.3+ Years</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Location</span>
+                  <span class="font-semibold text-slate-800 dark:text-slate-200">Pune, Maharashtra, India</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Education</span>
+                  <span class="font-semibold text-slate-800 dark:text-slate-200 text-right">B.E., Mechanical (7.52 CGPA)</span>
+                </div>
+                <div class="flex justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">Work Methodology</span>
+                  <span class="font-semibold text-slate-800 dark:text-slate-200">Agile / Scrum (10+ Sprints)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-500 dark:text-slate-400">Notice Period / Status</span>
+                  <span class="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    Available / Immediate
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-3">
+                <a href="mailto:samtaingle555@gmail.com" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-center text-sm transition shadow-md shadow-brand-500/20">
+                  <i class="fa-solid fa-envelope mr-2"></i> samtaingle555@gmail.com
+                </a>
+                <a href="tel:+919022370199" class="w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 text-slate-700 dark:text-slate-300 font-semibold text-center text-sm transition">
+                  <i class="fa-solid fa-phone mr-2"></i> +91 9022370199
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROFESSIONAL EXPERIENCE ==================== -->
+    <section id="experience" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="section-badge">Career Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Delivering high-impact enterprise frontend solutions in fast-paced Agile environments.</p>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto">
+          <!-- Timeline Central Line -->
+          <div class="hidden sm:block absolute left-8 top-4 bottom-4 w-0.5 bg-gradient-to-b from-brand-500 via-rose-500 to-amber-500"></div>
+
+          <!-- Single Company Master Block -->
+          <div class="relative sm:pl-20 mb-12">
+            <!-- Timeline Icon -->
+            <div class="hidden sm:flex absolute left-3 -translate-x-1/2 top-1 w-10 h-10 rounded-full bg-brand-600 text-white items-center justify-center font-bold text-sm shadow-lg shadow-brand-500/30 border-4 border-white dark:border-slate-900">
+              <i class="fa-solid fa-briefcase text-xs"></i>
+            </div>
+
+            <!-- Role Header -->
+            <div class="p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition">
+              
+              <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+                <div>
+                  <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 border border-brand-200 dark:border-brand-800 mb-2">
+                    Current Position
+                  </span>
+                  <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Frontend Developer (Angular)</h3>
+                  <div class="text-base font-medium text-slate-600 dark:text-slate-400 flex items-center gap-2 mt-1">
+                    <span class="font-semibold text-slate-800 dark:text-slate-200">Webicsoft India Pvt. Ltd.</span>
+                    <span>&bull;</span>
+                    <span>Pune, India</span>
+                  </div>
+                </div>
+
+                <div class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono text-xs font-medium">
+                  Aug 2023 – Present
+                </div>
+              </div>
+
+              <!-- General Company Responsibilities -->
+              <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                Spearheaded frontend architecture across three flagship products: <strong>RocketFlow BPM platform</strong>, <strong>Chatify real-time chat</strong>, and <strong>EduLearn LMS</strong>. Partnered closely with Product Owners, UI/UX designers, and backend microservice engineers across 10+ Agile sprints.
+              </p>
+
+              <!-- Key Daily Impact Points -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Turned wireframes and HLD/LLD technical specifications into production UI.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Developed 20+ reusable components & integrated 15+ REST APIs (.NET & Node.js).</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Wrote Jasmine/Karma unit tests achieving 80%+ coverage, cutting QA bugs by ~35%.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Optimized bundle size via route lazy-loading and custom SCSS mixins.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Collaborated on CI/CD pipelines with Jenkins, Docker, and GitHub Actions.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                  <span>Employed AI-assisted coding tools for rapid unit test drafting and bug diagnosis.</span>
+                </div>
+              </div>
+
+              <!-- Sub-Product Breakdown Cards -->
+              <div class="space-y-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+                <h4 class="text-xs uppercase tracking-wider font-bold text-slate-400 dark:text-slate-500">Products Delivered at Webicsoft:</h4>
+
+                <!-- Product 1: RocketFlow -->
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                      RocketFlow – Business Process Management (BPM) Platform
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">May 2025 – Present</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-2">
+                    Delivered 20+ reusable UI components across 8 modules (Supply Chain, Hospital Management, Finance, Field Service, Car Rental, Delivery, BPA, Pickup & Drop). Implemented dynamic forms, workflow routing, and Postman API contract validations.
+                  </p>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="skill-tag">Angular v8–v16</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">RxJS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">REST APIs (.NET)</span>
+                    <span class="skill-tag">Jasmine</span>
+                  </div>
+                </div>
+
+                <!-- Product 2: Chatify -->
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                      Chatify – Real-Time Enterprise Chat Application
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Apr 2024 – May 2025</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-2">
+                    Engineered real-time instant messaging, live presence, message delivery states, and chat histories via WebSocket. Leveraged Angular services and custom RxJS pipelines for low-latency state synchronization.
+                  </p>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="skill-tag">Angular 14</span>
+                    <span class="skill-tag">WebSocket</span>
+                    <span class="skill-tag">RxJS Observables</span>
+                    <span class="skill-tag">Angular Material</span>
+                    <span class="skill-tag">SCSS</span>
+                  </div>
+                </div>
+
+                <!-- Product 3: EduLearn LMS -->
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <span class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                      EduLearn – Learning Management System (LMS)
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Aug 2023 – Apr 2024</span>
+                  </div>
+                  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mb-2">
+                    Created interactive student & instructor portals with course video streaming, quiz scoring engines, and progress dashboards. Integrated with Node.js microservices and Jenkins/Docker CI/CD pipelines.
+                  </p>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="skill-tag">Angular 14+</span>
+                    <span class="skill-tag">Node.js Microservices</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED PROJECTS SHOWCASE ==================== -->
+    <section id="projects" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="section-badge">Featured Work</span>
+          <h2 class="section-title">Selected Projects & Systems</h2>
+          <p class="section-subtitle">Real-world enterprise applications, CMS architectures, and offline-first desktop systems.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+          <button class="filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="filter-btn" data-filter="enterprise">Enterprise & BPM</button>
+          <button class="filter-btn" data-filter="realtime">Real-Time & Chat</button>
+          <button class="filter-btn" data-filter="desktop">Desktop / Offline POS</button>
+          <button class="filter-btn" data-filter="aem">AEM + Angular</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+          
+          <!-- Project 1: RocketFlow -->
+          <div class="project-card" data-category="enterprise">
+            <div class="project-card-header bg-gradient-to-br from-rose-950/60 to-slate-900 border-b border-rose-900/30 p-6">
+              <div class="flex items-center justify-between text-xs font-mono text-rose-400 mb-3">
+                <span>Enterprise Product</span>
+                <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">May 2025 – Present</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-rose-400 transition">
+                RocketFlow BPM Platform
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Enterprise Business Process & Workflow Automation</p>
+            </div>
+            
+            <div class="p-6 flex flex-col justify-between flex-grow">
+              <div class="space-y-3 mb-6">
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Scalable BPM platform automating multi-tenant enterprise operations. Delivered 20+ reusable components across 8 business modules with dynamic forms and 15+ REST APIs.
+                </p>
+                <div class="space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cube text-brand-500"></i>
+                    <span><strong>Modules:</strong> Supply Chain, Healthcare, Finance, Car Rental</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check-double text-emerald-500"></i>
+                    <span><strong>Impact:</strong> 80%+ test coverage, ~35% fewer bugs</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="skill-tag">Angular v8–v16</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">RxJS</span>
+                  <span class="skill-tag">.NET APIs</span>
+                  <span class="skill-tag">Jasmine</span>
+                  <span class="skill-tag">Postman</span>
+                </div>
+                <button class="project-detail-btn w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-brand-500 transition flex items-center justify-center gap-2" data-modal="modal-rocketflow">
+                  <span>View Architecture & Modules</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Chatify -->
+          <div class="project-card" data-category="realtime">
+            <div class="project-card-header bg-gradient-to-br from-sky-950/60 to-slate-900 border-b border-sky-900/30 p-6">
+              <div class="flex items-center justify-between text-xs font-mono text-sky-400 mb-3">
+                <span>Real-Time WebSockets</span>
+                <span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">Apr 2024 – May 2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition">
+                Chatify Real-Time Messaging
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Instant Chat with Live Presence & SPA Navigation</p>
+            </div>
+            
+            <div class="p-6 flex flex-col justify-between flex-grow">
+              <div class="space-y-3 mb-6">
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Real-time communication app using WebSockets and RxJS streams. Features instant bi-directional messaging, online/offline presence tracking, chat room switching, and message histories.
+                </p>
+                <div class="space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-sky-400"></i>
+                    <span><strong>Real-Time:</strong> Low-latency WebSockets & RxJS subject streams</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield text-emerald-500"></i>
+                    <span><strong>UI:</strong> Angular Material, custom pipes, route guards</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="skill-tag">Angular 14</span>
+                  <span class="skill-tag">WebSocket</span>
+                  <span class="skill-tag">RxJS</span>
+                  <span class="skill-tag">Angular Material</span>
+                  <span class="skill-tag">Reactive Forms</span>
+                </div>
+                <button class="project-detail-btn w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-sky-500 dark:hover:border-sky-500 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-sky-500 transition flex items-center justify-center gap-2" data-modal="modal-chatify">
+                  <span>View Architecture & Features</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: EduLearn LMS -->
+          <div class="project-card" data-category="enterprise">
+            <div class="project-card-header bg-gradient-to-br from-emerald-950/60 to-slate-900 border-b border-emerald-900/30 p-6">
+              <div class="flex items-center justify-between text-xs font-mono text-emerald-400 mb-3">
+                <span>EdTech Enterprise</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Aug 2023 – Apr 2024</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">
+                EduLearn LMS Platform
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Course Streaming, Quizzes & Student Portals</p>
+            </div>
+            
+            <div class="p-6 flex flex-col justify-between flex-grow">
+              <div class="space-y-3 mb-6">
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Enterprise LMS supporting thousands of students and instructors. Built course enrollment, video lecture players, interactive quizzes with instant evaluation, and student progress dashboards.
+                </p>
+                <div class="space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-palette text-amber-400"></i>
+                    <span><strong>UX to Code:</strong> Figma/XD wireframes to pixel-perfect SPA</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-gears text-emerald-400"></i>
+                    <span><strong>CI/CD:</strong> Jenkins, Docker containerization & GitHub Actions</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="skill-tag">Angular 14+</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">SCSS</span>
+                  <span class="skill-tag">Jenkins</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Karma</span>
+                </div>
+                <button class="project-detail-btn w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-emerald-500 dark:hover:border-emerald-500 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-emerald-500 transition flex items-center justify-center gap-2" data-modal="modal-edulearn">
+                  <span>View Architecture & Details</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: AEM + Angular Integration -->
+          <div class="project-card" data-category="aem">
+            <div class="project-card-header bg-gradient-to-br from-amber-950/60 to-slate-900 border-b border-amber-900/30 p-6">
+              <div class="flex items-center justify-between text-xs font-mono text-amber-400 mb-3">
+                <span>Personal Project &bull; Open Source</span>
+                <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">AEM + Angular</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">
+                AEM + Angular 16 Integration
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Headless JSON Page Model & HTL Authoring Dialogs</p>
+            </div>
+            
+            <div class="p-6 flex flex-col justify-between flex-grow">
+              <div class="space-y-3 mb-6">
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Architected a complete bridge between Adobe Experience Manager (AEM) and an Angular 16 frontend. Renders dynamic components from AEM-style JSON models with custom HTL dialogs and Maven packaging.
+                </p>
+                <div class="space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-server text-amber-400"></i>
+                    <span><strong>AEM Side:</strong> Custom Card component, HTL, ui.apps & FileVault</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code-fork text-sky-400"></i>
+                    <span><strong>Dev Setup:</strong> Local Express mock API & Angular reverse proxy</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="skill-tag">Angular 16</span>
+                  <span class="skill-tag">AEM / HTL</span>
+                  <span class="skill-tag">RxJS HttpClient</span>
+                  <span class="skill-tag">Maven</span>
+                  <span class="skill-tag">Express.js</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a href="https://github.com/samtaingle/aem-angular-portfolio" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold text-center transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Repo</span>
+                  </a>
+                  <button class="project-detail-btn px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-500 text-xs text-slate-700 dark:text-slate-300 transition" data-modal="modal-aem" title="View Architecture Specs">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Pharmacy Management & POS Desktop App -->
+          <div class="project-card" data-category="desktop">
+            <div class="project-card-header bg-gradient-to-br from-purple-950/60 to-slate-900 border-b border-purple-900/30 p-6">
+              <div class="flex items-center justify-between text-xs font-mono text-purple-400 mb-3">
+                <span>Personal Project &bull; In Progress</span>
+                <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">Electron + SQLite</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition">
+                Pharmacy POS & Desktop ERP
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Offline-First Billing, Batch Inventory & GST Invoices</p>
+            </div>
+            
+            <div class="p-6 flex flex-col justify-between flex-grow">
+              <div class="space-y-3 mb-6">
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  High-speed offline-first pharmacy billing desktop app. Uses Electron IPC preload context bridge, React 18, and WebAssembly SQLite running locally on Windows AppData for zero-latency operations.
+                </p>
+                <div class="space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-receipt text-purple-400"></i>
+                    <span><strong>Billing:</strong> Keyboard-driven strip & loose deduction, A5 GST</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-stacked text-teal-400"></i>
+                    <span><strong>Inventory:</strong> Expiry batch tracking, vendor credits, ledgers</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="skill-tag">Electron</span>
+                  <span class="skill-tag">React 18</span>
+                  <span class="skill-tag">Vite</span>
+                  <span class="skill-tag">Tailwind CSS</span>
+                  <span class="skill-tag">SQLite (Wasm)</span>
+                  <span class="skill-tag">Context Bridge</span>
+                </div>
+                <button class="project-detail-btn w-full py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-purple-500 dark:hover:border-purple-500 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-purple-500 transition flex items-center justify-center gap-2" data-modal="modal-pharmacy">
+                  <span>View System Architecture</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & TECHNICAL PROFICIENCY ==================== -->
+    <section id="skills" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="section-badge">Capabilities</span>
+          <h2 class="section-title">Technical Skills & Expertise</h2>
+          <p class="section-subtitle">A comprehensive breakdown of technologies, methodologies, and engineering tools I leverage daily.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Category 1: Frontend & Angular Core -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center text-lg">
+                <i class="fa-brands fa-angular"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">Frontend & Angular</h3>
+                <p class="text-xs text-slate-500">Core framework & language</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">Angular (v8–v16)</span>
+              <span class="badge-skill">TypeScript</span>
+              <span class="badge-skill">JavaScript (ES6+)</span>
+              <span class="badge-skill">Signals</span>
+              <span class="badge-skill">Standalone Components</span>
+              <span class="badge-skill">HTML5</span>
+              <span class="badge-skill">CSS3 / SCSS</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Angular Architecture & Reactive Patterns -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">Reactive & State</h3>
+                <p class="text-xs text-slate-500">Observables & patterns</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">RxJS Observables</span>
+              <span class="badge-skill">Reactive Forms</span>
+              <span class="badge-skill">NgRx</span>
+              <span class="badge-skill">Lazy Loading (Performance)</span>
+              <span class="badge-skill">Route Guards</span>
+              <span class="badge-skill">HTTP Interceptors</span>
+              <span class="badge-skill">Services & DI</span>
+            </div>
+          </div>
+
+          <!-- Category 3: UI Libraries & Design Systems -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-500 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">UI & Styling</h3>
+                <p class="text-xs text-slate-500">Responsive layouts & libraries</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">Angular Material</span>
+              <span class="badge-skill">Bootstrap 4 & 5</span>
+              <span class="badge-skill">Tailwind CSS</span>
+              <span class="badge-skill">Sass / SCSS</span>
+              <span class="badge-skill">Cross-Browser CSS</span>
+              <span class="badge-skill">Figma / XD to Code</span>
+            </div>
+          </div>
+
+          <!-- Category 4: APIs & Microservices Integration -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">APIs & Real-Time</h3>
+                <p class="text-xs text-slate-500">Backends & data exchange</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">REST APIs (15+ integrated)</span>
+              <span class="badge-skill">Angular HttpClient</span>
+              <span class="badge-skill">WebSocket Protocol</span>
+              <span class="badge-skill">.NET Microservices</span>
+              <span class="badge-skill">Node.js / Express</span>
+              <span class="badge-skill">Postman Contract Testing</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Quality Assurance & Testing -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">Testing & Debugging</h3>
+                <p class="text-xs text-slate-500">Stability & reliability</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">Jasmine Unit Testing</span>
+              <span class="badge-skill">Karma Test Runner</span>
+              <span class="badge-skill">Chrome DevTools</span>
+              <span class="badge-skill">80%+ Code Coverage</span>
+              <span class="badge-skill">Cross-Browser (Safari/Firefox)</span>
+            </div>
+          </div>
+
+          <!-- Category 6: CI/CD, Tools & Modern Ecosystem -->
+          <div class="skill-group-card">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 dark:text-white">DevOps & Ecosystem</h3>
+                <p class="text-xs text-slate-500">Pipelines & platforms</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge-skill">Git & GitHub</span>
+              <span class="badge-skill">GitHub Actions</span>
+              <span class="badge-skill">Jenkins Pipelines</span>
+              <span class="badge-skill">Docker (Basic)</span>
+              <span class="badge-skill">JIRA / Agile Scrum</span>
+              <span class="badge-skill">AEM (HTL, Maven)</span>
+              <span class="badge-skill">AI-Assisted Dev</span>
+              <span class="badge-skill">Electron & React 18</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="section-badge">Foundation</span>
+          <h2 class="section-title">Education & Academic Background</h2>
+          <p class="section-subtitle">Rigorous analytical foundation applied to software engineering and systems design.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md relative overflow-hidden">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl font-bold">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">Bachelor of Engineering (B.E.)</h3>
+                  <p class="text-sm text-slate-600 dark:text-slate-400 font-medium">Mechanical Engineering</p>
+                </div>
+              </div>
+              <div class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono text-xs font-semibold">
+                2019 – 2023
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-300">
+              <p class="flex items-center gap-2 font-medium">
+                <i class="fa-solid fa-building-columns text-slate-400"></i>
+                <span>College of Engineering and Technology, Akola, Maharashtra</span>
+              </p>
+              <div class="flex flex-wrap items-center gap-4 text-xs font-mono">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                  CGPA: 7.52 / 10
+                </span>
+                <span class="text-slate-500">Strong analytical problem solving, data structures, and algorithmic logic.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p class="section-subtitle">Interested in hiring, collaborating on an enterprise project, or exploring frontend architecture? Drop a note below.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 max-w-5xl mx-auto">
+          
+          <!-- Contact Details Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Email Card -->
+            <div class="contact-method-card group cursor-pointer" id="contact-email-card" title="Click to copy email">
+              <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center text-xl group-hover:scale-110 transition">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="flex-grow">
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium">Direct Email</span>
+                <span class="font-bold text-slate-900 dark:text-white text-sm break-all">samtaingle555@gmail.com</span>
+              </div>
+              <span class="text-xs text-brand-500 font-mono opacity-0 group-hover:opacity-100 transition"><i class="fa-regular fa-clone"></i></span>
+            </div>
+
+            <!-- Phone Card -->
+            <a href="tel:+919022370199" class="contact-method-card group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xl group-hover:scale-110 transition">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="flex-grow">
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium">Call / WhatsApp</span>
+                <span class="font-bold text-slate-900 dark:text-white text-sm">+91 9022370199</span>
+              </div>
+              <span class="text-xs text-emerald-500 font-mono opacity-0 group-hover:opacity-100 transition"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-method-card">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium">Current Location</span>
+                <span class="font-bold text-slate-900 dark:text-white text-sm">Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <!-- Social Links Grid -->
+            <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+              <h4 class="text-sm font-bold text-slate-900 dark:text-white mb-4">Connect on Professional Networks</h4>
+              <div class="flex gap-3">
+                <a href="https://github.com/samtaingle" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-900 dark:hover:border-slate-100 text-slate-800 dark:text-slate-200 font-semibold text-xs text-center flex items-center justify-center gap-2 transition hover:-translate-y-0.5">
+                  <i class="fa-brands fa-github text-base"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/samta-ingle" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded-xl border border-sky-200 dark:border-sky-900/60 bg-sky-50/50 dark:bg-sky-950/20 hover:border-sky-500 text-sky-700 dark:text-sky-300 font-semibold text-xs text-center flex items-center justify-center gap-2 transition hover:-translate-y-0.5">
+                  <i class="fa-brands fa-linkedin text-base"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct Message Form -->
+          <div class="lg:col-span-7">
+            <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Send a Message</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">Fill out this form and it will open directly in your mail client addressed to Samta.</p>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="John Doe" class="form-input" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="email">Your Email</label>
+                    <input type="email" id="email" required placeholder="john@example.com" class="form-input" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="subject">Subject</label>
+                  <input type="text" id="subject" required placeholder="Frontend Developer Opportunity" class="form-input" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="message">Message</label>
+                  <textarea id="message" rows="4" required placeholder="Hi Samta, I reviewed your profile and would love to discuss..." class="form-input"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-600 to-rose-600 hover:from-brand-500 hover:to-rose-500 text-white shadow-lg shadow-brand-500/25 transition duration-200 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane text-xs"></i>
+                  <span>Send Message via Email</span>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-12 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 dark:text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-6 h-6 rounded-md bg-brand-600 text-white font-bold text-xs flex items-center justify-center">SI</span>
+        <span class="font-semibold text-slate-800 dark:text-slate-200">Samta Ingle</span>
+        <span>&bull;</span>
+        <span>Designed & Engineered for GitHub Pages</span>
+      </div>
+      <div>
+        <span>Built with Angular precision & modern web standards.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODALS ==================== -->
+
+  <!-- Modal 1: RocketFlow BPM -->
+  <div id="modal-rocketflow" class="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="flex justify-between items-start pb-4 border-b border-slate-200 dark:border-slate-800 mb-5">
+        <div>
+          <span class="text-xs font-mono text-rose-500 uppercase tracking-wider font-semibold">Webicsoft India Pvt. Ltd.</span>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">RocketFlow – BPM Platform</h3>
+          <p class="text-xs text-slate-500 mt-0.5">May 2025 – Present &bull; Business Process Automation</p>
+        </div>
+        <button class="modal-close-btn text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Project Overview</h4>
+          <p>
+            Developed and maintained an enterprise-scale BPM (Business Process Management) platform using Angular and TypeScript, allowing corporate enterprises to automate complex workflows and operations.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Key Contributions & Architecture:</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+            <li><strong>8 Core Enterprise Modules:</strong> Delivered complete frontend modules for Supply Chain, Hospital Management, Finance, Field Service, Car Rental, Delivery, Business Process Automation (BPA), and Pickup & Drop.</li>
+            <li><strong>Reusable Component Suite:</strong> Engineered 20+ reusable Angular components (data tables with filtering/pagination, dynamic form builders, modal workflows, breadcrumbs).</li>
+            <li><strong>Microservice Contract Validation:</strong> Integrated 15+ REST APIs with .NET backends, performing rigorous contract checks in Postman before code freezes.</li>
+            <li><strong>Quality Benchmark:</strong> Wrote Jasmine/Karma unit test suites achieving 80%+ test coverage, directly contributing to approximately 35% reduction in QA-reported production bugs.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Tech Stack:</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-tag">Angular v8–v16</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Sass/SCSS</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">.NET Microservices</span>
+            <span class="skill-tag">Jasmine / Karma</span>
+            <span class="skill-tag">Git / JIRA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Chatify -->
+  <div id="modal-chatify" class="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="flex justify-between items-start pb-4 border-b border-slate-200 dark:border-slate-800 mb-5">
+        <div>
+          <span class="text-xs font-mono text-sky-500 uppercase tracking-wider font-semibold">Webicsoft India Pvt. Ltd.</span>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Chatify – Real-Time Chat</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Apr 2024 – May 2025 &bull; Real-time Messaging System</p>
+        </div>
+        <button class="modal-close-btn text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Project Overview</h4>
+          <p>
+            Architected and engineered a high-concurrency real-time chat application using Angular, TypeScript, RxJS observables, and WebSockets to enable instant peer-to-peer and room-based messaging.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Key Contributions & Architecture:</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+            <li><strong>WebSocket State Pipelines:</strong> Implemented real-time message streaming, heartbeat connection health, and automatic reconnection mechanisms using RxJS WebSocketSubject.</li>
+            <li><strong>Live Presence & Indicators:</strong> Built real-time online/offline user status, live typing indicators, and instant read receipts.</li>
+            <li><strong>SPA Routing & Lazy Loading:</strong> Utilized Angular Router with route guards, custom pipes for timestamp formatting, and Reactive Forms for rich chat input and validation.</li>
+            <li><strong>Component Testing:</strong> Delivered unit tests for chat bubble components, stream synchronization services, and message queues.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Tech Stack:</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-tag">Angular 14</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">RxJS</span>
+            <span class="skill-tag">WebSocket</span>
+            <span class="skill-tag">Angular Material</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">SCSS</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: EduLearn LMS -->
+  <div id="modal-edulearn" class="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="flex justify-between items-start pb-4 border-b border-slate-200 dark:border-slate-800 mb-5">
+        <div>
+          <span class="text-xs font-mono text-emerald-500 uppercase tracking-wider font-semibold">Webicsoft India Pvt. Ltd.</span>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">EduLearn – LMS Platform</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Aug 2023 – Apr 2024 &bull; EdTech Platform</p>
+        </div>
+        <button class="modal-close-btn text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Project Overview</h4>
+          <p>
+            Developed a comprehensive Learning Management System supporting students and educators with video streaming, automated assessments, and course progression tracking.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Key Contributions & Architecture:</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+            <li><strong>Design-to-Code:</strong> Converted Figma and Adobe XD wireframes into responsive, high-performance web pages with custom SCSS styling and Angular Material UI components.</li>
+            <li><strong>Interactive Quizzes & Dashboards:</strong> Created quiz engines with timers, instant evaluation, and visual performance charts for students and instructors.</li>
+            <li><strong>DevOps & Deployment:</strong> Integrated with CI/CD deployment pipelines using Jenkins, Docker container images, and GitHub Actions.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Tech Stack:</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="skill-tag">Angular 14+</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Node.js Microservices</span>
+            <span class="skill-tag">SCSS</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: AEM + Angular -->
+  <div id="modal-aem" class="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="flex justify-between items-start pb-4 border-b border-slate-200 dark:border-slate-800 mb-5">
+        <div>
+          <span class="text-xs font-mono text-amber-500 uppercase tracking-wider font-semibold">Open Source &bull; Personal Project</span>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">AEM + Angular 16 Integration</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Headless CMS & Modular Frontend Architecture</p>
+        </div>
+        <button class="modal-close-btn text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Project Overview</h4>
+          <p>
+            A bridge project demonstrating how an enterprise Angular 16 frontend integrates seamlessly with Adobe Experience Manager (AEM) page models.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Key Technical Highlights:</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+            <li><strong>JSON Page Model Renderer:</strong> Angular 16 client dynamically parses AEM-style JSON hierarchy using RxJS observables and HttpClient.</li>
+            <li><strong>AEM Custom Component:</strong> Designed custom AEM Card component with authoring dialog (`_cq_dialog`) and HTL template, packaged into standard Maven `ui.apps` and `ui.content` modules with FileVault.</li>
+            <li><strong>Local Mock Dev Proxy:</strong> Built an Express.js mock API and Angular development proxy to run the complete end-to-end integration without needing a heavy local AEM license.</li>
+          </ul>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://github.com/samtaingle/aem-angular-portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 dark:bg-slate-800 text-white text-xs font-semibold hover:bg-slate-700 transition">
+            <i class="fa-brands fa-github"></i>
+            <span>Browse GitHub Repository</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Pharmacy POS Desktop -->
+  <div id="modal-pharmacy" class="project-modal">
+    <div class="project-modal-backdrop"></div>
+    <div class="project-modal-content">
+      <div class="flex justify-between items-start pb-4 border-b border-slate-200 dark:border-slate-800 mb-5">
+        <div>
+          <span class="text-xs font-mono text-purple-500 uppercase tracking-wider font-semibold">Personal Project &bull; In Progress</span>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Pharmacy POS & Desktop App</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Electron &bull; React 18 &bull; SQLite (WASM) &bull; Vite</p>
+        </div>
+        <button class="modal-close-btn text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Project Overview</h4>
+          <p>
+            An offline-first, high-throughput desktop point-of-sale and inventory system designed specifically for pharmacies and medical retailers.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-white mb-1.5">Key Technical Highlights:</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+            <li><strong>Local SQLite Storage:</strong> Database persists directly in Windows AppData using sql.js WebAssembly via a secure Electron preload context bridge.</li>
+            <li><strong>Pharmacy Specific Billing:</strong> Supports keyboard-driven checkout with granular strip vs loose tablet unit deductions, thermal receipt printing, and standard A5 GST invoicing.</li>
+            <li><strong>Batch Inventory Engine:</strong> Tracks medicine batches, supplier purchases, expiry alerts, customer credit ledgers, and sales returns.</li>
+            <li><strong>Packaging:</strong> Windows packaging (.exe installer & portable zip) configured with electron-builder.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast for Copy to Clipboard -->
+  <div id="toast" class="toast hidden">
+    <i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
