@@ -11,7 +11,7 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
 
 - **Professional Headline**: Angular Developer | Frontend Developer
 - **Overall Experience**: 3.3 Years
-- **Core Specialization**: Angular (v8–v16), TypeScript, RxJS, REST APIs
+- **Technical Specialization**: Angular (v8–v16)
 - **Employment Status**: Currently Not Working &bull; **Immediate Joiner / Available to Join**
 - **Location**: Pune, Maharashtra, India
 - **Education**: Bachelor of Engineering (B.E.), Mechanical Engineering, College of Engineering and Technology, Akola (Graduated 2023, CGPA: 7.52/10)
