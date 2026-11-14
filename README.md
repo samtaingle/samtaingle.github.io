@@ -109,3 +109,4 @@ To allow visitors to download your actual PDF CV:
 ---
 
 Crafted with care for **Samta Ingle** | [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com)
+

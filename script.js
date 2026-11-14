@@ -20,8 +20,13 @@ function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const html = document.documentElement;
 
-  // Retrieve saved preference or default to dark (matches developer aesthetic)
-  const savedTheme = localStorage.getItem('theme') || 'dark';
+  // Safely retrieve saved preference or default to dark
+  let savedTheme = 'dark';
+  try {
+    savedTheme = localStorage.getItem('theme') || 'dark';
+  } catch (e) {
+    console.warn('localStorage not accessible:', e);
+  }
   
   if (savedTheme === 'dark') {
     html.classList.add('dark');
@@ -32,7 +37,11 @@ function initTheme() {
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
       const isDark = html.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      try {
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      } catch (e) {
+        console.warn('Could not save theme to localStorage:', e);
+      }
     });
   }
 }
@@ -265,3 +274,4 @@ function initScrollSpy() {
     });
   });
 }
+
