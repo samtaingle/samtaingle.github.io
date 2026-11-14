@@ -10,9 +10,9 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
 ## 👤 Profile Summary
 
 - **Professional Headline**: Angular Developer | Frontend Developer
-- **Overall Experience**: 3.3 Years (Enterprise Frontend)
-- **Angular Specialization**: Angular (v8–v16), TypeScript, RxJS, REST APIs
-- **Employment Status**: Not Working &bull; **Immediate Joiner / Available to Join**
+- **Overall Experience**: 3.3 Years
+- **Core Specialization**: Angular (v8–v16), TypeScript, RxJS, REST APIs
+- **Employment Status**: Currently Not Working &bull; **Immediate Joiner / Available to Join**
 - **Location**: Pune, Maharashtra, India
 - **Education**: Bachelor of Engineering (B.E.), Mechanical Engineering, College of Engineering and Technology, Akola (Graduated 2023, CGPA: 7.52/10)
 - **Contact**: [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com) | +91 9022370199
@@ -24,21 +24,21 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
 ## 🛠️ Technical Skills
 
 - **Frontend**: Angular, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS, Bootstrap, Angular Material
-- **Angular Concepts**: Components, Services, Dependency Injection, Routing, Guards, Interceptors, Reactive Forms, RxJS, Lifecycle Hooks
-- **API Integration**: REST APIs (15+ integrated), HTTP Client, JSON, Postman, WebSockets
-- **Testing**: Jasmine, Karma, 80%+ Unit Test Coverage, Chrome DevTools
+- **Angular Development**: Components, Services, Dependency Injection, Routing, Route Guards, HTTP Interceptors, Reactive Forms, Lifecycle Hooks, RxJS
+- **API Integration**: REST APIs, Angular HTTP Client, JSON, Postman
+- **Testing**: Jasmine, Karma
 - **Tools**: Git, GitHub, VS Code, Jira, Agile/Scrum
-- **Additional**: Node.js, Java, AEM (HTL, Components), Maven, Docker, Jenkins
+- **Additional**: Node.js, Express.js, MySQL, MongoDB, Java, AEM, Maven, Docker, Jenkins
 
 ---
 
 ## 💼 Projects Breakdown
 
-### Professional Experience Projects (Webicsoft India Pvt. Ltd.)
+### Professional Experience Projects (Webicsoft India Pvt. Ltd. — Previous Employment)
 1. **RocketFlow – Business Process Management (BPM) Platform**
    - Built 20+ reusable Angular components across 8 enterprise modules (Supply Chain, Hospital Management, Finance, Field Service, Car Rental, Delivery, BPA, Pickup & Drop).
    - Integrated 15+ REST APIs with .NET microservices and validated API contracts in Postman.
-   - Achieved 80%+ unit test coverage with Jasmine/Karma, contributing to ~35% fewer QA-reported bugs across 10+ Agile sprints.
+   - Achieved 80%+ unit test coverage with Jasmine/Karma, contributing to approximately 35% fewer QA-reported bugs across 10+ Agile sprints.
 2. **Chatify – Real-Time Enterprise Chat Application**
    - Developed real-time communication platform using Angular 14, TypeScript, RxJS observables, and WebSockets.
    - Implemented real-time messaging, online/offline presence tracking, authentication, chat history, and SPA routing.
@@ -47,15 +47,21 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
    - Integrated with Node.js microservices, Docker, Jenkins CI/CD, and GitHub Actions.
 
 ### Personal Technical Projects
-4. **AEM + Angular 16 Portfolio** (Open Source)
+4. **AEM + Angular 16 Portfolio** (Personal Project &bull; Open Source)
    - Integration bridge between Angular 16 and Adobe Experience Manager (AEM).
    - Features custom AEM components with authoring dialogs (`_cq_dialog`), Sling Models in Java, HTL templates, Maven packaging (`ui.apps`, `ui.content`), AEM Mocks, and Dispatcher documentation.
    - Repository: [github.com/samtaingle/aem-angular-portfolio](https://github.com/samtaingle/aem-angular-portfolio)
-5. **Madina Medical Pharmacy POS** (Desktop App)
-   - Offline-first desktop point-of-sale and inventory management application.
-   - Local SQLite database stored in Windows AppData through Electron's preload context bridge.
-   - Keyboard-driven billing with strip and loose-tablet stock deduction, thermal receipts, A5 GST invoices, batch-wise inventory with expiry tracking, and customer credit ledgers.
-   - Built with Electron, React 18, Vite, Tailwind CSS, and SQLite (sql.js / WASM).
+5. **Madina Medical – Pharmacy Management System** (Personal Project &bull; Full-Stack System)
+   - Full-stack pharmacy point-of-sale and inventory management software engineered for retail pharmacies.
+   - **Implemented Features**:
+     - Fast checkout supporting strip and loose-tablet stock deduction, bill calculations, thermal receipts, and A5 GST invoices.
+     - Batch-wise inventory management with expiry date alert flags, vendor records, customer credit ledgers, and sales returns.
+     - Angular frontend with Reactive Forms and RxJS-based state communication.
+     - Node.js and Express REST APIs with a normalized MySQL relational database.
+   - **Planned Features**:
+     - Sales analytics and profit/loss reporting dashboard.
+     - Automated periodic database backups.
+     - Multi-counter barcode scanner integration.
 
 ---
 
