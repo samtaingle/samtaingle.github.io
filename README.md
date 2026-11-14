@@ -1,112 +1,89 @@
-# Samta Ingle — Frontend Developer Portfolio
+# Samta Ingle — Angular Developer & Frontend Developer Portfolio
 
-A modern, high-performance, and responsive portfolio website designed for **Samta Ingle**, specializing in **Angular (v8–v16)**, TypeScript, RxJS, and scalable enterprise web solutions.
+A modern, high-performance, responsive, and ATS-friendly developer portfolio website for **Samta Ingle**, specializing in **Angular (v8–v16)**, TypeScript, RxJS, and scalable enterprise web solutions.
 
-Live ready to be hosted on **GitHub Pages** with zero build configuration!
-
----
-
-## 🌟 Key Features
-
-- **Built for Recruiters & Tech Leads**: Showcases 3.3+ years of experience, 20+ reusable components, 80%+ unit test coverage, and ~35% fewer QA bugs.
-- **Interactive Angular Code Window**: Hero section featuring an Angular 16 component card showcasing technical strengths in syntax-highlighted code.
-- **Project Filter System**: Filter between **Enterprise & BPM**, **Real-Time & Chat**, **Desktop / Offline POS**, and **AEM + Angular**.
-- **Interactive Architecture Modals**: Detailed deep-dive popups for each project explaining system design, API contracts, and key impact.
-- **Dark / Light Theme Toggle**: Seamless transition with `localStorage` persistence.
-- **Quick Actions**: One-click email copy to clipboard, direct mailto inquiry form, and links to GitHub & LinkedIn.
-- **Zero Build Setup**: Pure HTML5, modern CSS3 with Tailwind CSS & custom design system, and vanilla JavaScript. Push to GitHub and it's live instantly!
+🔗 **Live Website**: [https://samtaingle.github.io/](https://samtaingle.github.io/)  
+📦 **Repository**: [https://github.com/samtaingle/samtaingle.github.io](https://github.com/samtaingle/samtaingle.github.io)
 
 ---
 
-## 🚀 How to Publish on GitHub Pages (Step-by-Step)
+## 👤 Profile Summary
 
-### Step 1: Initialize Git and Commit
-
-Open PowerShell or Command Prompt in this `portfolio` directory and run:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Samta Ingle Frontend Developer Portfolio"
-```
-
-### Step 2: Create a New Repository on GitHub
-
-1. Go to [GitHub New Repository](https://github.com/new).
-2. Repository name recommendation:
-   - **Option A (User site - recommended)**: `samtaingle.github.io`  
-     *(Your site will be live at `https://samtaingle.github.io/`)*
-   - **Option B (Project site)**: `portfolio`  
-     *(Your site will be live at `https://samtaingle.github.io/portfolio/`)*
-3. Make it **Public**.
-4. Leave "Add a README", ".gitignore", and license **unchecked** (we already have them).
-5. Click **Create repository**.
-
-### Step 3: Push to GitHub
-
-Link your local repository to GitHub and push your code:
-
-```bash
-git branch -M main
-git remote add origin https://github.com/samtaingle/<YOUR-REPO-NAME>.git
-git push -u origin main
-```
-
-*(Replace `<YOUR-REPO-NAME>` with `samtaingle.github.io` or `portfolio`)*
-
-### Step 4: Enable GitHub Pages
-
-1. In your GitHub repository, click on **Settings** (top menu).
-2. On the left sidebar under "Code and automation", click **Pages**.
-3. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`.
-   - **Branch**: Select `main` and folder `/ (root)`.
-4. Click **Save**.
-5. Within 1–2 minutes, your website will be live! GitHub will show a banner with your URL (e.g., `https://samtaingle.github.io/`).
+- **Professional Headline**: Angular Developer | Frontend Developer
+- **Overall Experience**: 3.3 Years (Enterprise Frontend)
+- **Angular Specialization**: Angular (v8–v16), TypeScript, RxJS, REST APIs
+- **Employment Status**: Not Working &bull; **Immediate Joiner / Available to Join**
+- **Location**: Pune, Maharashtra, India
+- **Education**: Bachelor of Engineering (B.E.), Mechanical Engineering, College of Engineering and Technology, Akola (Graduated 2023, CGPA: 7.52/10)
+- **Contact**: [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com) | +91 9022370199
+- **LinkedIn**: [linkedin.com/in/samta-ingle](https://linkedin.com/in/samta-ingle)
+- **GitHub**: [github.com/samtaingle](https://github.com/samtaingle)
 
 ---
 
-## 🛠️ Local Preview
+## 🛠️ Technical Skills
 
-To preview the website locally on your computer:
+- **Frontend**: Angular, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS, Bootstrap, Angular Material
+- **Angular Concepts**: Components, Services, Dependency Injection, Routing, Guards, Interceptors, Reactive Forms, RxJS, Lifecycle Hooks
+- **API Integration**: REST APIs (15+ integrated), HTTP Client, JSON, Postman, WebSockets
+- **Testing**: Jasmine, Karma, 80%+ Unit Test Coverage, Chrome DevTools
+- **Tools**: Git, GitHub, VS Code, Jira, Agile/Scrum
+- **Additional**: Node.js, Java, AEM (HTL, Components), Maven, Docker, Jenkins
 
-### Option A: Open directly in browser
-Double-click `index.html` in your file explorer to open it in Chrome, Edge, or Firefox.
+---
 
-### Option B: Local Python server
+## 💼 Projects Breakdown
+
+### Professional Experience Projects (Webicsoft India Pvt. Ltd.)
+1. **RocketFlow – Business Process Management (BPM) Platform**
+   - Built 20+ reusable Angular components across 8 enterprise modules (Supply Chain, Hospital Management, Finance, Field Service, Car Rental, Delivery, BPA, Pickup & Drop).
+   - Integrated 15+ REST APIs with .NET microservices and validated API contracts in Postman.
+   - Achieved 80%+ unit test coverage with Jasmine/Karma, contributing to ~35% fewer QA-reported bugs across 10+ Agile sprints.
+2. **Chatify – Real-Time Enterprise Chat Application**
+   - Developed real-time communication platform using Angular 14, TypeScript, RxJS observables, and WebSockets.
+   - Implemented real-time messaging, online/offline presence tracking, authentication, chat history, and SPA routing.
+3. **EduLearn – Learning Management System (LMS)**
+   - Created student and instructor portals with course enrollment, video streaming, interactive quizzes with instant evaluation, and progress dashboards.
+   - Integrated with Node.js microservices, Docker, Jenkins CI/CD, and GitHub Actions.
+
+### Personal Technical Projects
+4. **AEM + Angular 16 Portfolio** (Open Source)
+   - Integration bridge between Angular 16 and Adobe Experience Manager (AEM).
+   - Features custom AEM components with authoring dialogs (`_cq_dialog`), Sling Models in Java, HTL templates, Maven packaging (`ui.apps`, `ui.content`), AEM Mocks, and Dispatcher documentation.
+   - Repository: [github.com/samtaingle/aem-angular-portfolio](https://github.com/samtaingle/aem-angular-portfolio)
+5. **Madina Medical Pharmacy POS** (Desktop App)
+   - Offline-first desktop point-of-sale and inventory management application.
+   - Local SQLite database stored in Windows AppData through Electron's preload context bridge.
+   - Keyboard-driven billing with strip and loose-tablet stock deduction, thermal receipts, A5 GST invoices, batch-wise inventory with expiry tracking, and customer credit ledgers.
+   - Built with Electron, React 18, Vite, Tailwind CSS, and SQLite (sql.js / WASM).
+
+---
+
+## 🚀 How to Run Locally
+
 ```bash
+# Option 1: Direct browser launch
+Start-Process index.html
+
+# Option 2: Local Python web server
 python -m http.server 8000
 ```
 Then visit `http://localhost:8000` in your browser.
 
 ---
 
-## 📁 File Structure
+## 📁 Repository Structure
 
 ```
-portfolio/
-├── index.html        # Main HTML structure with semantic sections & Tailwind CDN
-├── style.css         # Custom animations, ambient glow orbs, modal & theme styling
-├── script.js         # Theme toggle, filter buttons, modal logic, clipboard helper
-├── .nojekyll         # Disables Jekyll on GitHub Pages to serve static files directly
-└── README.md         # Documentation & deployment guide
+samtaingle.github.io/
+├── index.html               # Semantic, accessible HTML with SEO & ATS metadata
+├── style.css                # Polished theme styles, ambient glows, modals, layout
+├── script.js                # Theme toggle, project filtering, modals, clipboard, toast
+├── Samta_Ingle_Resume.pdf   # Direct downloadable PDF resume
+├── .nojekyll                # Direct static asset serving on GitHub Pages
+└── README.md                # Project documentation & developer profile
 ```
 
 ---
 
-## 📄 Adding Your Resume / CV PDF File
-
-To allow visitors to download your actual PDF CV:
-1. Copy your CV PDF file into this folder and rename it to `Samta_Ingle_Resume.pdf`.
-2. In `index.html`, find the "Resume / CV" or "Get in Touch" button in the header or hero.
-3. You can set the link to:
-   ```html
-   <a href="Samta_Ingle_Resume.pdf" download="Samta_Ingle_Resume.pdf" class="...">
-     <i class="fa-solid fa-file-arrow-down mr-1"></i> Download CV
-   </a>
-   ```
-
----
-
-Crafted with care for **Samta Ingle** | [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com)
-
+Crafted for **Samta Ingle** | [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com)

@@ -1,6 +1,6 @@
 /**
  * Samta Ingle - Portfolio Interactive Script
- * Theme Toggle, Project Filters, Modals, Clipboard, Smooth Interactions
+ * Theme Toggle, Project Filters, Modals, Clipboard, Smooth Interactions, Resume Handler
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initClipboard();
   initContactForm();
   initScrollSpy();
+  initResumeDownload();
 });
 
 /* ===================================================
@@ -58,6 +59,7 @@ function initMobileMenu() {
 
   menuBtn.addEventListener('click', () => {
     const isHidden = menu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', !isHidden);
     if (isHidden) {
       menuIcon.classList.remove('fa-xmark');
       menuIcon.classList.add('fa-bars');
@@ -72,6 +74,7 @@ function initMobileMenu() {
   links.forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
       menuIcon.classList.remove('fa-xmark');
       menuIcon.classList.add('fa-bars');
     });
@@ -79,7 +82,7 @@ function initMobileMenu() {
 }
 
 /* ===================================================
-   3. Projects Filter
+   3. Projects Filter (Professional vs Personal)
    =================================================== */
 function initProjectFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
@@ -89,9 +92,12 @@ function initProjectFilters() {
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Toggle active button style
-      filterButtons.forEach(btn => btn.classList.remove('active'));
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
       button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
 
       const filterValue = button.getAttribute('data-filter');
 
@@ -183,18 +189,29 @@ function initClipboard() {
 }
 
 function copyToClipboard(text, message) {
-  navigator.clipboard.writeText(text).then(() => {
-    showToast(message);
-  }).catch(() => {
-    // Fallback if clipboard API is restricted
-    const input = document.createElement('input');
-    input.value = text;
-    document.body.appendChild(input);
-    input.select();
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast(message);
+    }).catch(() => {
+      fallbackCopy(text, message);
+    });
+  } else {
+    fallbackCopy(text, message);
+  }
+}
+
+function fallbackCopy(text, message) {
+  const input = document.createElement('input');
+  input.value = text;
+  document.body.appendChild(input);
+  input.select();
+  try {
     document.execCommand('copy');
-    document.body.removeChild(input);
     showToast(message);
-  });
+  } catch (err) {
+    console.warn('Copy command failed', err);
+  }
+  document.body.removeChild(input);
 }
 
 function showToast(message) {
@@ -208,7 +225,7 @@ function showToast(message) {
 
   setTimeout(() => {
     toast.classList.add('hidden');
-  }, 3000);
+  }, 3200);
 }
 
 /* ===================================================
@@ -238,10 +255,10 @@ function initContactForm() {
 
     const mailtoUrl = `mailto:samtaingle555@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
     
-    // Open default email client
+    // Open mail client
     window.location.href = mailtoUrl;
 
-    showToast('Drafting email in your email client...');
+    showToast('Opening default email client...');
     form.reset();
   });
 }
@@ -275,3 +292,14 @@ function initScrollSpy() {
   });
 }
 
+/* ===================================================
+   8. Resume Download Toast Notification
+   =================================================== */
+function initResumeDownload() {
+  const resumeLinks = document.querySelectorAll('a[href$=".pdf"]');
+  resumeLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      showToast('Downloading Samta Ingle Resume PDF...');
+    });
+  });
+}
