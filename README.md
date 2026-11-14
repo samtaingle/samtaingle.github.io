@@ -1,4 +1,4 @@
-# Samta Ingle — Angular Developer & Frontend Developer Portfolio
+# Samta Ingle — Angular Developer | Frontend Developer Portfolio
 
 A modern, high-performance, responsive, and ATS-friendly developer portfolio website for **Samta Ingle**, specializing in **Angular (v8–v16)**, TypeScript, RxJS, and scalable enterprise web solutions.
 
