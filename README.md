@@ -12,7 +12,7 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
 - **Professional Headline**: Angular Developer | Frontend Developer
 - **Overall Experience**: 3.3 Years
 - **Technical Specialization**: Angular (v8–v16)
-- **Employment Status**: Currently Not Working &bull; **Immediate Joiner / Available to Join**
+- **Employment Status**: Currently Working (Webicsoft India Pvt. Ltd.) &bull; **Available to Join**
 - **Location**: Pune, Maharashtra, India
 - **Education**: Bachelor of Engineering (B.E.), Mechanical Engineering, College of Engineering and Technology, Akola (Graduated 2023, CGPA: 7.52/10)
 - **Contact**: [samtaingle555@gmail.com](mailto:samtaingle555@gmail.com) | +91 9022370199
@@ -34,8 +34,8 @@ A modern, high-performance, responsive, and ATS-friendly developer portfolio web
 
 ## 💼 Projects Breakdown
 
-### Professional Experience Projects (Webicsoft India Pvt. Ltd. — Previous Employment)
-1. **RocketFlow – Business Process Management (BPM) Platform**
+### Professional Experience Projects (Webicsoft India Pvt. Ltd. — Current Employment)
+1. **RocketFlow – Business Process Management (BPM) Platform** (May 2025 – Present)
    - Built 20+ reusable Angular components across 8 enterprise modules (Supply Chain, Hospital Management, Finance, Field Service, Car Rental, Delivery, BPA, Pickup & Drop).
    - Integrated 15+ REST APIs with .NET microservices and validated API contracts in Postman.
    - Achieved 80%+ unit test coverage with Jasmine/Karma, contributing to approximately 35% fewer QA-reported bugs across 10+ Agile sprints.
